@@ -59,23 +59,41 @@ section {
 .sec1 {
   display: none;
   transform: translateY(0) scale(1);
+  background-color: hotpink;
 }
 
 .sec2 {
   display: none;
   transform: translateY(0) scale(1);
+  background-color: rgb(105, 255, 243);
 }
 
 .sec3 {
   display: none;
   transform: translateY(0) scale(1);
+  background-color: rgb(255, 148, 105);
 }
 
 .sec4 {
   display: none;
   transform: translateY(0) scale(1);
+  background-color: rgb(130, 255, 105);
 }
 
+.active {
+  display: block;
+  animation: scaleAnim 0.5s ease-in-out;
+}
+
+@keyframes scaleAnim {
+  from {
+    transform: translateY(-100%) scaleY(0);
+  }
+
+  to {
+    transform:translateY(0) scaleY(1);
+  }
+}
 /* Controls */
 
 .controls {
