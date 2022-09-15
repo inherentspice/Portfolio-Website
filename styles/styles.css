@@ -59,25 +59,25 @@ section {
 .sec1 {
   display: none;
   transform: translateY(0) scale(1);
-  background-color: hotpink;
+  background-color: rgb(255, 105, 180);
 }
 
 .sec2 {
   display: none;
   transform: translateY(0) scale(1);
-  /* background-color: rgb(105, 255, 243); */
+  background-color: rgb(68, 221, 208);
 }
 
 .sec3 {
   display: none;
   transform: translateY(0) scale(1);
-  /* background-color: rgb(255, 148, 105); */
+  background-color: rgb(255, 148, 105);
 }
 
 .sec4 {
   display: none;
   transform: translateY(0) scale(1);
-  /* background-color: rgb(130, 255, 105); */
+  background-color: rgb(130, 255, 105);
 }
 
 .active {
@@ -188,8 +188,13 @@ img {
   padding-right: 18rem;
 }
 
+.right-header>p {
+  margin-bottom: 1rem;
+}
+
 .name {
   font-size: 3rem;
+  margin-bottom: 1rem;
 }
 
 .name>span {
@@ -201,5 +206,131 @@ img {
   line-height: 2rem;
 }
 
+/* About */
+.about-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-top: 3.5rem;
+  padding-bottom: 5rem;
+}
 
+.right-about {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+}
+
+.about-item {
+  border-radius: 5px;
+  transition: all .4s ease-in-out;
+  box-shadow: 1px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.about-item:hover {
+  cursor: default;
+  transform: translateY(-5px);
+  box-shadow: 1px 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.abt-text {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.large-text {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--color-secondary);
+}
+
+.small-text {
+  padding-left: 3rem;
+  position: relative;
+  text-transform: uppercase();
+  font-size: 1.2rem;
+  color: var(--color-white);
+  letter-spacing: 2px;
+}
+
+.left-about {
+  padding-right: 5rem;
+}
+
+.left-about-heading {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.left-about-heading>img {
+  max-width: 4rem;
+}
+
+.left-about>p {
+  line-height: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  color: var(--color-grey0);
+}
+
+.left-about-heading>h4 {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
 /* independent components */
+.btn-container {
+  display: flex;
+  align-self: flex-start;
+}
+.main-btn {
+  border-radius: 30px;
+  color: inherit;
+  font-weight: 600;
+  position: relative;
+  border: 1px solid var(--color-secondary);
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.btn-text {
+  padding: 0 2rem;
+}
+
+.btn-icon {
+  background-color: var(--color-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  padding: 1rem;
+}
+
+.main-title {
+  text-align: center;
+}
+
+.main-title>h2 {
+  position: relative;
+  text-transform: uppercase;
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.main-title>span {
+  color: var(--color-secondary);
+}
+
+/* .bg-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: var(--color-secondary);
+  transition: all .4s ease-in-out;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+  font-weight: 800;
+  font-size: 5rem;
+  opacity: .1;
+} */
