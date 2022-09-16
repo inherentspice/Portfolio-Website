@@ -17,6 +17,7 @@
   --color-grey-4: #454e56;
   --color-grey-5: #2a2e35;
   --color-grey-6: #12181b;
+  --color-section-2: #44ddd0;
   --br-sm-2: 14px;
   --box-shadow-1: 0 3px 15px rgba(0, 0, 0, .3)
 }
@@ -65,7 +66,7 @@ section {
 .sec2 {
   display: none;
   transform: translateY(0) scale(1);
-  background-color: rgb(68, 221, 208);
+  background-color: var(--color-section-2);
 }
 
 .sec3 {
@@ -274,10 +275,33 @@ img {
   color: var(--color-grey0);
 }
 
-.left-about-heading>h4 {
+h4 {
   font-size: 2rem;
   text-transform: uppercase;
 }
+
+.about-stats {
+  padding-bottom: 4rem;
+}
+
+.programming-skills {
+  display: flex;
+  gap: 2rem;
+  background-color: var(--color-white);
+  padding: 1.5rem;
+  border: 1px solid var(--color-grey0);
+  box-shadow: var(--box-shadow-1)
+}
+
+.programming-skill {
+  display: flex;
+}
+
+.language-image {
+  height: 5rem;
+}
+
+
 /* independent components */
 .btn-container {
   display: flex;
