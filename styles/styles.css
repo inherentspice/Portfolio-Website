@@ -16,7 +16,6 @@
   --color-section-1: #ff69b4;
   --color-section-2: #44ddd0;
   --color-section-3: #ff9469;
-  --color-section-4: #82ff69;
   --br-sm-2: 14px;
   --box-shadow-1: 0 3px 15px rgba(0, 0, 0, .3)
 }
@@ -77,7 +76,7 @@ section {
 .sec4 {
   display: none;
   transform: translateY(0) scale(1);
-  background-color: var(--color-section-4);
+  background-color: var(--color-secondary);
 }
 
 .active {
@@ -373,6 +372,18 @@ h4 {
 .hover-items:hover {
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
 }
+
+/* Contact Section */
+.contact-content-container {
+  display: flex;
+  padding-top: 3.5rem;
+}
+
+.left-contact {
+  flex: 2;
+}
+
+
 
 /* independent components */
 .btn-container {
