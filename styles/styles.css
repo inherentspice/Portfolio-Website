@@ -128,7 +128,7 @@ section {
     box-shadow: var(--box-shadow-1);
 }
 
-i {
+.control>i {
   font-size: 1.2rem;
   color: var(--color-grey-1);
   pointer-events: none;
@@ -383,8 +383,102 @@ h4 {
   flex: 2;
 }
 
+.left-contact>h4 {
+  margin-top: 1rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
 
+.left-contact>p {
+  margin: 1rem 0;
+  line-height: 2rem;
+}
 
+.contact-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contact-item>p {
+  margin: .3rem 0 !important;
+  padding: 0 !important;
+}
+
+.icon {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+}
+.icon>i {
+  display: flex;
+  align-items: center;
+  font-size: 1.3rem;
+  color: var(--color-white);
+}
+
+.right-contact {
+  flex: 3;
+  margin-left: 3rem;
+}
+
+.input-control {
+  margin: 1.5rem 0;
+  display: flex;
+  gap: 1rem;
+}
+
+input, textarea {
+  border-radius: 30px;
+  font-weight: inherit;
+  font-size: inherit;
+  font-family: inherit;
+  padding: .8rem 1.1rem;
+  outline: none;
+  border: none;
+  background-color: var(--color-section-3);
+  width: 100%;
+  color: var(--color-white);
+  resize: none;
+}
+
+::placeholder {
+  color: var(--color-grey-2);
+}
+
+.contact-icon {
+  display: flex;
+  margin-top: 2rem;
+}
+.contact-icons {
+  display: flex;
+}
+.contact-icon>a {
+  display: flex;
+  align-items: center;
+  color: var(--color-white);
+  background-color: var(--color-grey-2);
+  cursor: pointer;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 0 .4rem;
+  transition: all .4s ease-in-out;
+}
+.contact-icon>a>i {
+  color: var(--color-white);
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-icon>a>i:hover {
+  color: var(--color-secondary);
+}
+.contact-icon>a:hover {
+  background-color: var(--color-section-3);
+}
 /* independent components */
 .btn-container {
   display: flex;
