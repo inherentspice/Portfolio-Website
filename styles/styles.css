@@ -337,7 +337,7 @@ h4 {
   position: relative;
   display: flex;
   width: 125%;
-
+  gap: 0.75rem;
 }
 
 .hover-items>h3 {
@@ -365,13 +365,45 @@ h4 {
   font-size: 1.5rem;
 }
 
+.icons>a>button {
+  background-color: var(--color-white);
+  border-radius: 30%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  flex-direction: column;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 1rem;
+  box-shadow: 1px 1px 1px 1px rgb(0, 0, 0, 0.3)
+}
+
+.icons>a>button:hover {
+  box-shadow: 2px 2px 1px 1px rgba(0, 0, 0, 0.3);
+  color: var(--color-section-2);
+}
+
+.icons>a>button>span {
+  color: var(--color-section-2);
+  font-weight: 700;
+}
+
 .project-description {
-  font-weight: 500;
+  font-weight: 600;
+  background-color: #FFFFFF;
+  color: var(--color-black);
+  padding: 0.75rem;
+  border-radius: 5%;
+
 }
 .project-technologies {
   font-weight: 900;
   font-size: 1.25rem;
 }
+
 
 /* Contact Section */
 .contact-content-container {
