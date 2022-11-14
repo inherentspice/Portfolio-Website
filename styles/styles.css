@@ -420,6 +420,12 @@ h4 {
 
 
 /* Contact Section */
+
+input::placeholder, textarea::placeholder {
+  color: var(--color-white);
+  font-weight: 500;
+}
+
 .contact-content-container {
   display: flex;
   padding-top: 3.5rem;
@@ -429,17 +435,14 @@ h4 {
   flex: 2;
 }
 
-.left-contact>h4 {
-  margin-top: 1rem;
-  font-size: 2rem;
-  text-transform: uppercase;
-}
-
 .left-contact>p {
   margin: 1rem 0;
   line-height: 2rem;
 }
 
+.left-contact>p>span {
+  color: var(--color-section-3)
+}
 .contact-item {
   display: flex;
   align-items: center;
@@ -487,10 +490,6 @@ input, textarea {
   resize: none;
 }
 
-::placeholder {
-  color: var(--color-grey-2);
-}
-
 .contact-icon {
   display: flex;
   margin-top: 2rem;
@@ -524,6 +523,21 @@ input, textarea {
 }
 .contact-icon>a:hover {
   background-color: var(--color-section-3);
+}
+
+.submit-btn>button {
+  padding: 0.5rem 1.5rem;
+  background-color: var(--color-white);
+  font-weight: 800;
+  font-size: 1.1rem;
+  border-radius: 10%;
+  color: var(--color-black);
+  border: none;
+  cursor: pointer;
+}
+
+.submit-btn>button:hover {
+  color: var(--color-section-3);
 }
 /* independent components */
 .btn-container {
