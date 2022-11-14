@@ -624,6 +624,32 @@ input, textarea {
     width: 90%;
   }
 
+  .section {
+    padding: 2rem !important;
+  }
+
+  .about-container {
+    grid-template-columns: 1fr;
+  }
+
+  .left-about {
+    padding-right: 0;
+  }
+
+  .right-about {
+    padding-top: 2rem;
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .about-item {
+    width: 80%;
+  }
+
+  .abt-text {
+    text-align: center;
+  }
+
   .controls {
     top: auto;
     bottom: 0;
@@ -631,6 +657,11 @@ input, textarea {
     justify-content: center;
     left: 50%;
     transform: translateX(-50%);
+  }
+
+  .programming-skills {
+    flex-direction: column;
+    align-items: center;
   }
 
   .control {
