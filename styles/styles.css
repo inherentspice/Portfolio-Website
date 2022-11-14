@@ -614,6 +614,10 @@ input, textarea {
     margin: 0 auto;
   }
 
+  .right-header>p {
+    text-align: center;
+  }
+
   .name {
     font-size: 2rem;
     text-align: center;
@@ -671,6 +675,23 @@ input, textarea {
 
   .hover-items {
     width: auto;
+  }
+
+  .contact-content-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .contact-item {
+    font-size: 12px;
+  }
+
+  .right-contact {
+    margin-left: 0;
+  }
+
+  .submit-btn>button {
+    margin-bottom: 5rem;
   }
 
   .control {
