@@ -591,3 +591,49 @@ input, textarea {
 .fa-github {
   color: var(--color-black);
 }
+
+
+/* Mobile */
+@media screen and (max-width: 600px) {
+  header {
+    padding: 0;
+  }
+
+  .right-header {
+    padding: 2rem !important;
+  }
+
+  .header-content {
+    grid-template-columns: 1fr;
+    padding-bottom: 5rem;
+  }
+
+  .right-header {
+    grid-row: 1;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .name {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .image {
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  .controls {
+    top: auto;
+    bottom: 0;
+    flex-direction: row;
+    justify-content: center;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .control {
+    margin: 1rem .3rem;
+  }
+}
