@@ -71,6 +71,8 @@ section {
   display: none;
   transform: translateY(0) scale(1);
   background-color: var(--color-section-3);
+  padding-left: 10rem !important;
+  padding-right: 10rem !important;
 }
 
 .sec4 {
@@ -326,14 +328,17 @@ h4 {
 .portfolios {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  grid-gap: 2rem;
+  grid-gap: 6rem;
   margin-top: 3rem;
 }
 
 .portfolio-item {
   position: relative;
-  display: flex;
+  display: grid;
   align-items: center;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 1rem;
+  box-shadow: var(--box-shadow-1);
 }
 
 .img>img {
@@ -347,15 +352,15 @@ h4 {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  box-shadow: var(--box-shadow-1);
   position: relative;
   display: flex;
-  width: 125%;
+  width: 80%;
   gap: 0.75rem;
+  justify-self: center;
 }
 
 .hover-items>h3 {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   color: var(--color-white);
   margin-bottom: 1.5rem;
   text-align: center;
@@ -585,4 +590,50 @@ input, textarea {
 
 .fa-github {
   color: var(--color-black);
+}
+
+
+/* Mobile */
+@media screen and (max-width: 600px) {
+  header {
+    padding: 0;
+  }
+
+  .right-header {
+    padding: 2rem !important;
+  }
+
+  .header-content {
+    grid-template-columns: 1fr;
+    padding-bottom: 5rem;
+  }
+
+  .right-header {
+    grid-row: 1;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .name {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .image {
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  .controls {
+    top: auto;
+    bottom: 0;
+    flex-direction: row;
+    justify-content: center;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .control {
+    margin: 1rem .3rem;
+  }
 }
