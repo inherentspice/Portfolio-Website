@@ -664,6 +664,15 @@ input, textarea {
     align-items: center;
   }
 
+  .portfolio-item {
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+  }
+
+  .hover-items {
+    width: auto;
+  }
+
   .control {
     margin: 1rem .3rem;
   }
