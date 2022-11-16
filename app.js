@@ -2,9 +2,12 @@ const sections = document.querySelectorAll('.section');
 const divButtons = document.querySelectorAll('.controls');
 const buttons = document.querySelectorAll('.control');
 const allSections = document.querySelector('.main-content');
+const portfolioItem = document.querySelectorAll('.portfolio-item');
 
 
 function PageTransition() {
+
+  let tempImageHolder = ''
   // Button click changes active class
   for (let i=0; i < buttons.length; i++) {
     buttons[i].addEventListener('click', function () {
@@ -14,7 +17,6 @@ function PageTransition() {
     })
   }
 
-  console.log(allSections);
   //Changing the active section
   allSections.addEventListener('click', (e) => {
     const id = e.target.dataset.id;
@@ -31,10 +33,26 @@ function PageTransition() {
       })
 
       const element = document.getElementById(id)
-      console.log(id)
       element.classList.add('active');
     }
   })
+
+  console.log(portfolioItem.length);
+  for (let i = 0; i < portfolioItem.length; i++) {
+    portfolioItem[i].addEventListener('mouseover', (e) => {
+      let pictureItem = portfolioItem[i].querySelector(".img-display");
+      tempImageHolder = pictureItem.src;
+      pictureItem.src = "images/portrait-close.png";
+    })
+
+    portfolioItem[i].addEventListener('mouseout', (e) => {
+      portfolioItem[i].querySelector(".img-display").src = tempImageHolder;
+      tempImageHolder = "";
+  })
+}
+
+
+
 }
 
 PageTransition();
