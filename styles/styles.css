@@ -15,7 +15,7 @@
   --color-grey-2: #454e56;
   --color-section-1: #ff69b4;
   --color-section-2: #44ddd0;
-  --color-section-3: #ff9469;
+  --color-section-3: #ffaf69;
   --br-sm-2: 14px;
   --box-shadow-1: 0 3px 15px rgba(0, 0, 0, .3)
 }
@@ -405,7 +405,6 @@ h4 {
   font-weight: 700;
   cursor: pointer;
   padding: 1rem;
-  box-shadow: 1px 1px 1px 1px rgb(0, 0, 0, 0.3);
   color: var(--color-white);
 }
 
