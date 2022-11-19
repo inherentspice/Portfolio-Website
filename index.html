@@ -10,6 +10,14 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <script src="https://use.fontawesome.com/013110605f.js"></script>
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+   (function(){
+      emailjs.init("KaS44NhfNazsLyAK5");
+   })();
+  </script>
 </head>
 <body class="main-content">
   <header class="section sec1 header active" id="home">
@@ -245,22 +253,9 @@
               </div>
             </div>
           <div class="right-contact">
-            <form action="submit" class="contact-form">
-              <div class="input-control">
-                <input type="text" required placeholder="Your Name">
-                <input type="email" required placeholder="Your Email">
-              </div>
-              <div class="input-control">
-                <input type="text" required placeholder="Enter Subject">
-              </div>
-              <div class="input-control">
-                <textarea cols="15" rows="8" placeholder="Enter Message Here"></textarea>
-              </div>
-              <div class="submit-btn">
-                <button type="submit">Submit</button>
-              </div>
-            </form>
+            <img src="images/monster-mail.png" alt="">
           </div>
+          <div class="c-shape"></div>
         </div>
       </div>
     </section>
@@ -280,7 +275,6 @@
       <i class="fa fa-envelope-o" aria-hidden="true"></i>
     </div>
   </div>
-
   <script src="app.js"></script>
 </body>
 </html>

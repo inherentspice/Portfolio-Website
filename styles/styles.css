@@ -163,7 +163,6 @@ img {
   top: 30%;
   z-index: 1;
   clip-path: polygon(0 0, 24% 80%, 100% 100%, 0% 100%);
-
 }
 
 .image {
@@ -454,10 +453,11 @@ input::placeholder, textarea::placeholder {
 .contact-content-container {
   display: flex;
   padding-top: 3.5rem;
+  justify-content: space-between;
 }
 
 .left-contact {
-  flex: 2;
+  width: 50%;
 }
 
 .left-contact>p {
@@ -491,28 +491,14 @@ input::placeholder, textarea::placeholder {
 }
 
 .right-contact {
-  flex: 3;
   margin-left: 3rem;
 }
 
-.input-control {
-  margin: 1.5rem 0;
-  display: flex;
-  gap: 1rem;
-}
-
-input, textarea {
-  border-radius: 30px;
-  font-weight: 800;
-  font-size: inherit;
-  font-family: inherit;
-  padding: .8rem 1.1rem;
-  outline: none;
-  border: none;
-  background-color: var(--color-white);
-  width: 100%;
-  color: var(--color-section-3);
-  resize: none;
+.right-contact>img {
+  height: 700px;
+  width: auto;
+  border: 50px dashed var(--color-section-3);
+  border-radius: 15%;
 }
 
 .contact-icon {
@@ -550,19 +536,16 @@ input, textarea {
   background-color: var(--color-section-3);
 }
 
-.submit-btn>button {
-  padding: 0.5rem 1.5rem;
+.c-shape {
+  transition: all .4s ease-in-out;
+  width: 70%;
+  height: 70%;
   background-color: var(--color-section-3);
-  font-weight: 800;
-  font-size: 1.1rem;
-  border-radius: 10%;
-  color: var(--color-white);
-  border: none;
-  cursor: pointer;
-}
-
-.submit-btn>button:hover {
-  background-color: var(--color-section-1);
+  position: absolute;
+  left: 0;
+  top: 30%;
+  z-index: -1;
+  clip-path: polygon(0 0, 24% 80%, 100% 100%, 0% 100%);
 }
 /* independent components */
 .btn-container {
