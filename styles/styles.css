@@ -289,9 +289,8 @@ h4 {
 .programming-skills {
   display: flex;
   gap: 2rem;
-  background-color: var(--color-white);
+  background-color: var(--color-section-1);
   padding: 1.5rem;
-  border: 1px solid var(--color-grey-0);
   box-shadow: var(--box-shadow-1)
 }
 
@@ -300,7 +299,19 @@ h4 {
 }
 
 .language-image {
-  height: 5rem;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  color: var(--color-white);
+  font-weight: 700;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.language-image>img {
+  height: 100px;
+  width: 100px;
 }
 
 /* Portfolios */
