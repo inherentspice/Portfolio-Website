@@ -7,7 +7,7 @@ const portfolioItem = document.querySelectorAll('.portfolio-item');
 
 function PageTransition() {
 
-  let tempImageHolder = ''
+  let tempImageHolder = '';
   // Button click changes active class
   for (let i=0; i < buttons.length; i++) {
     buttons[i].addEventListener('click', function () {
@@ -42,7 +42,7 @@ function PageTransition() {
     portfolioItem[i].addEventListener('mouseover', (e) => {
       let pictureItem = portfolioItem[i].querySelector(".img-display");
       tempImageHolder = pictureItem.src;
-      pictureItem.src = "images/portrait-close.png";
+      pictureItem.src = `images/${e.target.id}.gif`;
     })
 
     portfolioItem[i].addEventListener('mouseout', (e) => {
