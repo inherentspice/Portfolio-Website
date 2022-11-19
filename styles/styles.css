@@ -37,7 +37,6 @@ a {
 header {
   height: 100vh;
   color: var(--color-white);
-  overflow: scroll;
 }
 
 section {
@@ -177,7 +176,7 @@ img {
 img {
   width: 100%;
   height: 100%;
-  object-fit:cover;
+  object-fit:contain;
   transition: all .4s ease-in-out;
 }
 
@@ -437,8 +436,8 @@ h4 {
 /* Contact Section */
 
 input::placeholder, textarea::placeholder {
-  color: var(--color-white);
-  font-weight: 500;
+  color: var(--color-section-3);
+  font-weight: 800;
 }
 
 .contact-content-container {
@@ -493,15 +492,15 @@ input::placeholder, textarea::placeholder {
 
 input, textarea {
   border-radius: 30px;
-  font-weight: inherit;
+  font-weight: 800;
   font-size: inherit;
   font-family: inherit;
   padding: .8rem 1.1rem;
   outline: none;
   border: none;
-  background-color: var(--color-section-3);
+  background-color: var(--color-white);
   width: 100%;
-  color: var(--color-white);
+  color: var(--color-section-3);
   resize: none;
 }
 
@@ -542,17 +541,17 @@ input, textarea {
 
 .submit-btn>button {
   padding: 0.5rem 1.5rem;
-  background-color: var(--color-white);
+  background-color: var(--color-section-3);
   font-weight: 800;
   font-size: 1.1rem;
   border-radius: 10%;
-  color: var(--color-black);
+  color: var(--color-white);
   border: none;
   cursor: pointer;
 }
 
 .submit-btn>button:hover {
-  color: var(--color-section-3);
+  background-color: var(--color-section-1);
 }
 /* independent components */
 .btn-container {
