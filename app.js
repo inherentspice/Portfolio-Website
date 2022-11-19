@@ -37,7 +37,6 @@ function PageTransition() {
     }
   })
 
-  console.log(portfolioItem.length);
   for (let i = 0; i < portfolioItem.length; i++) {
     portfolioItem[i].addEventListener('mouseover', (e) => {
       let pictureItem = portfolioItem[i].querySelector(".img-display");
@@ -50,8 +49,6 @@ function PageTransition() {
       tempImageHolder = "";
   })
 }
-
-
 
 }
 
