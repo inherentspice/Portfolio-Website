@@ -14,7 +14,7 @@
   --color-grey-1: #b2becd;
   --color-grey-2: #454e56;
   --color-section-1: #ff69b4;
-  --color-section-2: #44ddd0;
+  --color-section-2: #2ddbcc;
   --color-section-3: #ffaf69;
   --br-sm-2: 14px;
   --box-shadow-1: 0 3px 15px rgba(0, 0, 0, .3)
@@ -210,12 +210,14 @@ img {
   grid-template-columns: repeat(2, 1fr);
   padding-top: 3.5rem;
   padding-bottom: 5rem;
+  align-items: center;
 }
 
 .right-about {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 2rem;
+  max-height: 300px;
 }
 
 .about-item {
