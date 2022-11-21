@@ -460,10 +460,6 @@ input::placeholder, textarea::placeholder {
   justify-content: space-between;
 }
 
-.left-contact {
-  width: 50%;
-}
-
 .left-contact>p {
   margin: 1rem 0;
   line-height: 2rem;
@@ -476,6 +472,7 @@ input::placeholder, textarea::placeholder {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 0.5rem;
 }
 
 .contact-item>p {
@@ -499,7 +496,7 @@ input::placeholder, textarea::placeholder {
 }
 
 .right-contact>img {
-  height: 700px;
+  height: 600px;
   width: auto;
   border: 50px dashed var(--color-section-3);
   border-radius: 15%;
@@ -652,6 +649,7 @@ input::placeholder, textarea::placeholder {
     padding-top: 2rem;
     grid-template-columns: 1fr;
     justify-items: center;
+    max-height: none;
   }
 
   .about-item {
@@ -694,8 +692,20 @@ input::placeholder, textarea::placeholder {
     font-size: 12px;
   }
 
+  .left-contact {
+    width: auto;
+  }
+
   .right-contact {
     margin-left: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .right-contact>img {
+    height: auto;
+    width: 70%;
+    border: 5px solid var(--color-section-3);
   }
 
   .submit-btn>button {
