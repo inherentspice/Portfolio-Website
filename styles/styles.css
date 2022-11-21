@@ -550,33 +550,6 @@ input::placeholder, textarea::placeholder {
 }
 
 /* independent components */
-.btn-container {
-  display: flex;
-  align-self: flex-start;
-}
-.main-btn {
-  border-radius: 30px;
-  color: inherit;
-  font-weight: 600;
-  position: relative;
-  border: 1px solid var(--color-secondary);
-  display: flex;
-  align-items: center;
-  overflow: hidden;
-}
-
-.btn-text {
-  padding: 0 2rem;
-}
-
-.btn-icon {
-  background-color: var(--color-secondary);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  padding: 1rem;
-}
 
 .main-title {
   text-align: center;
