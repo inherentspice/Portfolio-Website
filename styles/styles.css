@@ -399,6 +399,7 @@ h4 {
   margin: 0 1rem;
   font-size: 1.5rem;
   color: var(--color-white);
+  box-shadow: 2px 2px 1px 1px rgba(0, 0, 0, 0.3);
 }
 
 .icons>a>i:hover {
@@ -419,6 +420,8 @@ h4 {
   cursor: pointer;
   padding: 1rem;
   color: var(--color-white);
+  box-shadow: 2px 2px 1px 1px rgba(0, 0, 0, 0.3);
+
 }
 
 .icons>a>button:hover {
